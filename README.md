@@ -74,20 +74,56 @@ It aims to make industrial maintenance support smarter, faster, and more efficie
 ## 📂 Project Structure
 
 ```text
+## 📂 Project Structure
+
+```text
 IntelliMaintain_AI/
 │
+├── agents/
+│   ├── fault_agent.py
+│   ├── knowledge_agent.py
+│   ├── recommendation_agent.py
+│   └── workflow.py
+│
+├── data/
+│   ├── chroma_db/
+│   ├── chroma_db_backup/
+│   ├── manuals/
+│   └── machine_memory.db
+│
+├── rag/
+│   ├── document_processor.py
+│   ├── maintenance_assistant.py
+│   └── retriever.py
+│
 ├── app.py
+├── assign_machine_id.py
+├── check_documents.py
+├── check_models.py
+├── config.py
+├── database.py
+├── test_cag.py
+├── test_embedding.py
+├── test_nexus.py
+│
 ├── requirements.txt
-├── README.md
 ├── .env
 ├── .gitignore
-│
-├── agents/
-├── database/
-├── rag/
-├── utils/
-│
-└── ...
+└── README.md
+```
+
+### Module Description
+
+| Module | Description |
+|---|---|
+| agents/ | Contains AI agents for fault detection, knowledge retrieval and recommendations |
+| data/ | Stores machine data, manuals and ChromaDB information |
+| rag/ | Handles document processing, retrieval and maintenance assistance |
+| app.py | Main Streamlit application |
+| config.py | Project configuration |
+| database.py | Database operations |
+| requirements.txt | Python dependencies |
+| .gitignore | Excludes sensitive and unnecessary files |
 ```
 
 *Note: The folder structure above is an illustrative example. Update it to match the actual project files.*
