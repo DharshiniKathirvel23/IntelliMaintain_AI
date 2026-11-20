@@ -2,78 +2,86 @@
 ### An Agentic AI-Powered Industrial Maintenance System
 
 <p align="center">
-  An intelligent AI-powered assistant for industrial equipment troubleshooting, maintenance investigation, and technical knowledge retrieval.
+  <b>Intelligent Maintenance | Hybrid RAG | Multi-Agent AI | Machine-Specific Memory</b>
 </p>
 
 ---
 
 ## 📌 About the Project
 
-**IntelliMaintain AI** is a fully software-based industrial maintenance assistant that uses Agentic AI to support industrial troubleshooting and maintenance decision-making.
+**IntelliMaintain AI** is an Agentic AI-powered industrial maintenance assistant designed to support equipment troubleshooting, technical knowledge retrieval, and intelligent maintenance decision-making.
 
-The system combines Hybrid Retrieval-Augmented Generation (Hybrid RAG), Context-Aware Generation (CAG), machine-specific memory, and multi-agent investigation to understand maintenance queries and generate context-aware responses.
+The system integrates Hybrid Retrieval-Augmented Generation (Hybrid RAG), Context-Aware Generation (CAG), machine-specific memory, and multi-agent investigation to provide context-aware responses to industrial maintenance problems.
 
-It aims to make industrial maintenance support smarter, faster, and more efficient.
+Unlike traditional maintenance support systems, IntelliMaintain AI combines AI-powered knowledge retrieval and collaborative agent workflows to investigate equipment-related issues and generate relevant maintenance recommendations.
 
 ## 🎯 Project Objectives
 
-- Provide intelligent industrial troubleshooting assistance.
-- Retrieve relevant information from technical documents.
-- Maintain machine-specific historical context.
-- Investigate equipment problems using multiple AI agents.
+- Develop an intelligent industrial maintenance assistant.
+- Simplify industrial equipment troubleshooting.
+- Retrieve relevant technical information from maintenance manuals.
+- Maintain machine-specific historical information.
+- Implement multi-agent investigation for maintenance problems.
 - Generate context-aware maintenance recommendations.
-- Improve access to industrial technical knowledge.
+- Improve accessibility to industrial technical knowledge.
 
 ## 🚀 Key Features
 
-1. **Hybrid RAG**
-   - Retrieves relevant information from technical documents.
-   - Improves the relevance of generated responses.
+### 1. Hybrid Retrieval-Augmented Generation (Hybrid RAG)
+- Retrieves relevant information from industrial technical documents.
+- Uses document processing and retrieval.
+- Provides knowledge-grounded responses.
 
-2. **Context-Aware Generation (CAG)**
-   - Uses available contextual information.
-   - Generates responses based on relevant equipment knowledge.
+### 2. Context-Aware Generation (CAG)
+- Uses relevant contextual information to improve response generation.
+- Supports context-aware maintenance assistance.
 
-3. **Machine-Specific Memory**
-   - Maintains machine-related historical information.
-   - Supports context-aware maintenance investigations.
+### 3. Machine-Specific Memory
+- Maintains machine-related information.
+- Supports historical context during maintenance investigations.
+- Helps provide machine-specific responses.
 
-4. **Multi-Agent Investigation**
-   - Uses multiple AI agents to investigate maintenance issues.
-   - Supports structured problem analysis.
+### 4. Multi-Agent Investigation
+The system includes specialized AI agents:
 
-5. **Intelligent Troubleshooting**
-   - Helps investigate possible equipment problems.
-   - Provides maintenance-related insights and recommendations.
+- **Fault Agent:** Supports investigation of equipment faults.
+- **Knowledge Agent:** Retrieves relevant technical knowledge.
+- **Recommendation Agent:** Generates maintenance-related recommendations.
 
-6. **Interactive Dashboard**
-   - User-friendly interface developed using Streamlit.
+### 5. Intelligent Maintenance Assistant
+- Accepts industrial maintenance queries.
+- Combines retrieved knowledge and machine context.
+- Generates AI-powered troubleshooting assistance.
 
-## 🧠 Technologies Used
+### 6. Interactive User Interface
+- Built using Streamlit.
+- Provides an interactive interface for maintenance queries and AI responses.
+
+## 🧠 System Architecture
+
+IntelliMaintain AI follows a multi-stage intelligent maintenance workflow.
+
+1. **User Input:** The user submits an industrial maintenance query.
+2. **Machine Identification:** The system identifies the relevant machine context.
+3. **Knowledge Retrieval:** Hybrid RAG retrieves relevant technical information.
+4. **Context Processing:** CAG and machine-specific memory provide contextual information.
+5. **Multi-Agent Investigation:** Specialized agents investigate the maintenance problem.
+6. **AI Response Generation:** The system generates a context-aware response.
+7. **Output:** Maintenance insights and recommendations are presented through the Streamlit interface.
+
+## 🏗️ Technologies Used
 
 | Technology | Purpose |
 |---|---|
-| Python | Core programming |
-| Streamlit | User interface |
-| Gemini API | AI-powered responses |
-| LangGraph | Multi-agent workflow |
-| ChromaDB | Vector database |
-| SQLite | Persistent data storage |
+| Python | Core programming language |
+| Streamlit | Interactive user interface |
+| Gemini API | AI-powered response generation |
+| LangGraph | Agent workflow orchestration |
+| ChromaDB | Vector database and knowledge retrieval |
+| SQLite | Persistent database storage |
 | Hybrid RAG | Technical knowledge retrieval |
+| CAG | Context-aware generation |
 
-## 🏗️ System Workflow
-
-1. User enters an industrial maintenance query.
-2. System identifies the relevant machine and context.
-3. Hybrid RAG retrieves relevant technical information.
-4. Machine-specific memory provides historical context.
-5. Multiple AI agents investigate the maintenance problem.
-6. Gemini generates a context-aware response.
-7. Results are presented through the Streamlit interface.
-
-## 📂 Project Structure
-
-```text
 ## 📂 Project Structure
 
 ```text
@@ -102,31 +110,42 @@ IntelliMaintain_AI/
 ├── check_models.py
 ├── config.py
 ├── database.py
+│
 ├── test_cag.py
 ├── test_embedding.py
 ├── test_nexus.py
 │
 ├── requirements.txt
-├── .env
 ├── .gitignore
+├── .env
 └── README.md
 ```
 
-### Module Description
+## 📁 Module Description
 
 | Module | Description |
 |---|---|
-| agents/ | Contains AI agents for fault detection, knowledge retrieval and recommendations |
-| data/ | Stores machine data, manuals and ChromaDB information |
-| rag/ | Handles document processing, retrieval and maintenance assistance |
+| agents/ | Contains specialized AI agents and workflow |
+| fault_agent.py | Fault investigation agent |
+| knowledge_agent.py | Technical knowledge agent |
+| recommendation_agent.py | Maintenance recommendation agent |
+| workflow.py | Agent workflow coordination |
+| data/ | Stores machine data, manuals and vector database files |
+| chroma_db/ | ChromaDB vector database |
+| manuals/ | Industrial maintenance documents |
+| machine_memory.db | Machine-specific memory storage |
+| rag/ | Retrieval-Augmented Generation components |
+| document_processor.py | Processes technical documents |
+| maintenance_assistant.py | Maintenance assistant logic |
+| retriever.py | Retrieves relevant technical information |
 | app.py | Main Streamlit application |
-| config.py | Project configuration |
+| config.py | Application configuration |
 | database.py | Database operations |
 | requirements.txt | Python dependencies |
-| .gitignore | Excludes sensitive and unnecessary files |
-```
 
 ## ⚙️ Installation and Setup
+
+Follow these steps to run IntelliMaintain AI locally.
 
 ### Step 1: Clone the Repository
 
@@ -134,7 +153,7 @@ IntelliMaintain_AI/
 git clone https://github.com/DharshiniKathirvel23/IntelliMaintain_AI.git
 ```
 
-### Step 2: Navigate to the Project
+### Step 2: Navigate to the Project Directory
 
 ```bash
 cd IntelliMaintain_AI
@@ -146,7 +165,7 @@ cd IntelliMaintain_AI
 python -m venv venv
 ```
 
-### Step 4: Activate the Environment
+### Step 4: Activate the Virtual Environment
 
 For Windows:
 
@@ -160,17 +179,21 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### Step 6: Configure the Gemini API Key
+### Step 6: Configure Environment Variables
 
 Create a `.env` file in the project root directory.
 
-Add your API key:
+Add the required API credentials according to the application's configuration.
+
+Example:
 
 ```env
 API_KEY=your_api_key_here
 ```
 
-**Important:** Never upload your actual API key or `.env` file to GitHub.
+Replace the placeholder with your own API key.
+
+**Security:** Never upload your `.env` file or API credentials to GitHub.
 
 ### Step 7: Run the Application
 
@@ -178,22 +201,47 @@ API_KEY=your_api_key_here
 streamlit run app.py
 ```
 
+The application will open in your browser.
+
+## 🗄️ Database and Knowledge Storage
+
+IntelliMaintain AI uses:
+
+- **ChromaDB:** For storing and retrieving vector-based technical knowledge.
+- **SQLite:** For persistent machine-specific information and database operations.
+- **Maintenance Manuals:** For providing technical knowledge to the retrieval system.
+
+## 🧪 Testing
+
+The project includes testing and verification scripts:
+
+- `test_cag.py`
+- `test_embedding.py`
+- `test_nexus.py`
+- `check_documents.py`
+- `check_models.py`
+
+These scripts support testing and checking different components of the application.
+
 ## 🔐 Security
 
-- API credentials are stored in environment variables.
-- Sensitive configuration files are excluded using `.gitignore`.
-- API keys should never be committed to the public repository.
+- Store API credentials in environment variables.
+- Exclude `.env` from version control.
+- Never expose private API keys or credentials.
+- Avoid committing virtual environments and unnecessary generated files.
 
 ## 🌟 Expected Outcome
 
-IntelliMaintain AI aims to provide an intelligent maintenance assistant that combines technical knowledge retrieval, machine-specific memory, and multi-agent investigation to support industrial maintenance activities.
+IntelliMaintain AI aims to provide a smart industrial maintenance assistant capable of combining technical knowledge retrieval, contextual memory, and multi-agent investigation to support equipment troubleshooting and maintenance decision-making.
 
 ## 🔮 Future Enhancements
 
-- Advanced predictive maintenance analysis.
-- Integration with additional industrial knowledge sources.
-- Improved maintenance history and reporting.
-- Enhanced multi-agent collaboration.
+- Enhanced predictive maintenance capabilities.
+- Advanced equipment failure analysis.
+- Expanded industrial technical knowledge base.
+- Improved multi-agent collaboration.
+- Advanced maintenance analytics and reporting.
+- Integration with additional industrial maintenance data sources.
 
 ## 👩‍💻 Developer
 
@@ -203,15 +251,24 @@ B.Tech – Information Technology
 
 Vivekanandha College of Engineering for Women
 
-## 📜 Project Information
+## 📌 Project Information
 
-**Project Name:** IntelliMaintain AI
-
-**Domain:** Agentic Artificial Intelligence
-
-**Application Type:** Software-Based Industrial Maintenance Assistant
+| Category | Details |
+|---|---|
+| Project Name | IntelliMaintain AI |
+| Domain | Agentic Artificial Intelligence |
+| Application | Industrial Maintenance Assistant |
+| Development Type | Software-Based |
+| Programming Language | Python |
+| Interface | Streamlit |
+| AI Integration | Gemini API |
+| Knowledge Retrieval | Hybrid RAG |
+| Agent Framework | LangGraph |
 
 ---
 
-⭐ If you find this project interesting, consider giving this repository a star!
+## ⭐ Support
 
+If you find this project interesting, consider giving this repository a star!
+
+**IntelliMaintain AI – Making Industrial Maintenance Smarter with Agentic AI.**
