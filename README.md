@@ -126,8 +126,6 @@ IntelliMaintain_AI/
 | .gitignore | Excludes sensitive and unnecessary files |
 ```
 
-*Note: The folder structure above is an illustrative example. Update it to match the actual project files.*
-
 ## ⚙️ Installation and Setup
 
 ### Step 1: Clone the Repository
